@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD7296FA-DCD8-4D90-88EE-5E8D65025D5C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>licenta</RootNamespace>
+    <AssemblyName>licenta</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Actualizeaza.aspx" />
+    <Content Include="ActualizeazaProdus.aspx" />
+    <Content Include="Adauga.aspx" />
+    <Content Include="AfiseazaCategorie.aspx" />
+    <Content Include="AfiseazaProdus.aspx" />
+    <Content Include="AnalizaHome.aspx" />
+    <Content Include="CautareProduse.aspx" />
+    <Content Include="CerereRezervari.aspx" />
+    <Content Include="Comenzi.aspx" />
+    <Content Include="ComenziAngajat.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="css\images\asus1.jpg" />
+    <Content Include="css\images\asus2.jpg" />
+    <Content Include="css\images\big1.jpg" />
+    <Content Include="css\images\big2.jpg" />
+    <Content Include="css\images\big3.jpg" />
+    <Content Include="css\images\body.gif" />
+    <Content Include="css\images\bul.gif" />
+    <Content Include="css\images\cart-link.gif" />
+    <Content Include="css\images\cat.gif" />
+    <Content Include="css\images\first-page1.png" />
+    <Content Include="css\images\foto-first-page3.png" />
+    <Content Include="css\images\foto-first-page4.png" />
+    <Content Include="css\images\h2-arr.gif" />
+    <Content Include="css\images\header.gif" />
+    <Content Include="css\images\hp_compaq.jpg" />
+    <Content Include="css\images\ico1.gif" />
+    <Content Include="css\images\ico2.gif" />
+    <Content Include="css\images\ico3.gif" />
+    <Content Include="css\images\ico4.gif" />
+    <Content Include="css\images\info.png" />
+    <Content Include="css\images\lenovo.jpg" />
+    <Content Include="css\images\logo.gif" />
+    <Content Include="css\images\monitoare-first-page2.png" />
+    <Content Include="css\images\monitor-first-page7.png" />
+    <Content Include="css\images\next.gif" />
+    <Content Include="css\images\order1.png" />
+    <Content Include="css\images\order2.png" />
+    <Content Include="css\images\prev.gif" />
+    <Content Include="css\images\slide1.jpg" />
+    <Content Include="css\images\small-asus1.jpg" />
+    <Content Include="css\images\small-asus2.jpg" />
+    <Content Include="css\images\small-hp_compaq.jpg" />
+    <Content Include="css\images\small-lenovo.jpg" />
+    <Content Include="css\images\small-ultrabook-hp.jpg" />
+    <Content Include="css\images\small-ultrabook-lenovo.jpg" />
+    <Content Include="css\images\small-ultrabook-samsung.jpg" />
+    <Content Include="css\images\small1.jpg" />
+    <Content Include="css\images\small2.jpg" />
+    <Content Include="css\images\small3.jpg" />
+    <Content Include="css\images\small4.jpg" />
+    <Content Include="css\images\small5.jpg" />
+    <Content Include="css\images\small6.jpg" />
+    <Content Include="css\images\small7.jpg" />
+    <Content Include="css\images\tablete-first-page5.png" />
+    <Content Include="css\images\tablete-first-page6.png" />
+    <Content Include="css\images\ultrabook-hp.jpg" />
+    <Content Include="css\images\ultrabook-lenovo.jpg" />
+    <Content Include="css\images\ultrabook-samsung.jpg" />
+    <Content Include="FacturiAngajat.aspx" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-func.js" />
+    <Content Include="js\jquery.jcarousel.pack.js" />
+    <Content Include="css\ie6.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="js\jquery-1.4.1.min.js" />
+    <Content Include="css\style.css" />
+    <Content Include="MyAccount.aspx" />
+    <Content Include="MyCart.aspx" />
+    <Content Include="RaportHome.aspx" />
+    <Content Include="RaportVanzariPeAn.aspx" />
+    <Content Include="RaportVanzariPeCategorii.aspx" />
+    <Content Include="RaportVanzariPeJudet.aspx" />
+    <Content Include="VeziComanda.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizeaza.aspx.cs">
+      <DependentUpon>Actualizeaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Actualizeaza.aspx.designer.cs">
+      <DependentUpon>Actualizeaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizeazaProdus.aspx.cs">
+      <DependentUpon>ActualizeazaProdus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizeazaProdus.aspx.designer.cs">
+      <DependentUpon>ActualizeazaProdus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adauga.aspx.cs">
+      <DependentUpon>Adauga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adauga.aspx.designer.cs">
+      <DependentUpon>Adauga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AfiseazaCategorie.aspx.cs">
+      <DependentUpon>AfiseazaCategorie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfiseazaCategorie.aspx.designer.cs">
+      <DependentUpon>AfiseazaCategorie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AfiseazaProdus.aspx.cs">
+      <DependentUpon>AfiseazaProdus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AfiseazaProdus.aspx.designer.cs">
+      <DependentUpon>AfiseazaProdus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnalizaHome.aspx.cs">
+      <DependentUpon>AnalizaHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnalizaHome.aspx.designer.cs">
+      <DependentUpon>AnalizaHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Angajat.Master.cs">
+      <DependentUpon>Angajat.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Angajat.Master.designer.cs">
+      <DependentUpon>Angajat.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CautareProduse.aspx.cs">
+      <DependentUpon>CautareProduse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CautareProduse.aspx.designer.cs">
+      <DependentUpon>CautareProduse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CerereRezervari.aspx.cs">
+      <DependentUpon>CerereRezervari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CerereRezervari.aspx.designer.cs">
+      <DependentUpon>CerereRezervari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Client.Master.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client.Master.designer.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Comenzi.aspx.cs">
+      <DependentUpon>Comenzi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comenzi.aspx.designer.cs">
+      <DependentUpon>Comenzi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ComenziAngajat.aspx.cs">
+      <DependentUpon>ComenziAngajat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComenziAngajat.aspx.designer.cs">
+      <DependentUpon>ComenziAngajat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacturiAngajat.aspx.cs">
+      <DependentUpon>FacturiAngajat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacturiAngajat.aspx.designer.cs">
+      <DependentUpon>FacturiAngajat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart.aspx.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCart.aspx.designer.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaportHome.aspx.cs">
+      <DependentUpon>RaportHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaportHome.aspx.designer.cs">
+      <DependentUpon>RaportHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RaportVanzariPeAn.aspx.cs">
+      <DependentUpon>RaportVanzariPeAn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaportVanzariPeAn.aspx.designer.cs">
+      <DependentUpon>RaportVanzariPeAn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RaportVanzariPeCategorii.aspx.cs">
+      <DependentUpon>RaportVanzariPeCategorii.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaportVanzariPeCategorii.aspx.designer.cs">
+      <DependentUpon>RaportVanzariPeCategorii.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RaportVanzariPeJudet.aspx.cs">
+      <DependentUpon>RaportVanzariPeJudet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaportVanzariPeJudet.aspx.designer.cs">
+      <DependentUpon>RaportVanzariPeJudet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VeziComanda.aspx.cs">
+      <DependentUpon>VeziComanda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VeziComanda.aspx.designer.cs">
+      <DependentUpon>VeziComanda.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Angajat.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57471</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
