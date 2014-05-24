@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="licenta.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Shop Around</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <!--[if lte IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+    <script src="/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script src="/js/jquery-func.js" type="text/javascript"></script>
+<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <!-- Shell -->
+        <div class="shell">
+          <!-- Header -->
+          <div id="header">
+            <h1 id="logo"><a href="#">shoparound</a></h1>
+
+            <!-- Navigation -->
+            <div id="navigation">
+              <ul>
+                    <li><a href="Adauga.aspx"> Adauga </a></li>
+                    <li><a href="Actualizeaza.aspx"> Actualizari </a></li>
+                    <li><a href="RaportHome.aspx"> Rapoarte Vanzari </a></li>
+                    <!---<li><a href="AnalizaHome.aspx"> Analiza </a></li>--->
+                     <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <LoggedInTemplate>
+                            <li>
+                                <a href="#" class="active"> Bine ai venit, <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!</a>
+                                 <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/>
+                            </li>
+               
+
+                        </LoggedInTemplate>
+                     </asp:LoginView>
+                </ul> 
+            </div>
+            <!-- End Navigation -->
+          </div>
+          <!-- End Header -->
+          <!-- Main -->
+          <div id="main">
+            <div class="cl">&nbsp;</div>
+            <!-- Content -->
+                <div id="content">
+    
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                </div>
+            <!-- End Content -->
+    
+            <!-- Sidebar -->
+            <div id="sidebar">
+              <!-- Search -->
+              <!-- Search -->
+      <div class="box search">
+
+        <h2>Cautare <span></span></h2>
+        <div class="box-content">
+           <label>Cuvant cheie</label>
+           <asp:TextBox ID="TextBoxSearchCuv" runat="server" Height="20px" Width="176px"></asp:TextBox>
+           <br /><br />
+           <label>Categorie</label> 
+              <asp:DropDownList ID="CategoriiDropDown"  
+                DataSource='<%# AfiseazaCategorii() %>' DataTextField="nume" 
+                DataValueField="id" runat="server" ViewStateMode="Enabled" Height="20px" 
+                Width="177px">
+            </asp:DropDownList>
+            
+            <div class="inline-field"><br />
+              <label>Pret</label>
+              <asp:DropDownList ID="DropDownListPret1" runat="server" CssClass="field small-field" 
+                    Height="20px" Width="66px"> 
+                <asp:ListItem Selected="True" Value="0" Text="0"></asp:ListItem>
+                <asp:ListItem Value="500" Text="500"></asp:ListItem>
+                <asp:ListItem Value="750" Text="750"></asp:ListItem>
+                <asp:ListItem Value="1000" Text="1000" ></asp:ListItem> 
+                <asp:ListItem Value="2000" Text="2000" ></asp:ListItem>
+                <asp:ListItem Value="3000" Text="3000" ></asp:ListItem> 
+                <asp:ListItem Value="4000" Text="4000" ></asp:ListItem>  
+              </asp:DropDownList>
+              
+              <label>pana la:</label>
+               <asp:DropDownList ID="DropDownListPret2" runat="server" CssClass="field small-field" 
+                    Height="20px" Width="59px"> 
+                <asp:ListItem Value="500" Text="500"></asp:ListItem>
+                <asp:ListItem Value="750" Text="750"></asp:ListItem>
+                <asp:ListItem Value="1000" Text="1000" ></asp:ListItem> 
+                <asp:ListItem Value="2000" Text="2000" ></asp:ListItem> 
+                <asp:ListItem Value="3000" Text="3000" ></asp:ListItem> 
+                <asp:ListItem Value="4000" Text="4000" ></asp:ListItem> 
+              </asp:DropDownList>
+            </div>
+             <asp:Button ID="ButtonSearchProducts" runat="server" 
+                onclick="ButtonSearchProducts_Click" Text="Cauta" CssClass="search-submit" 
+                Height="28px" Width="100px" />
+            
+        </div>
+      </div>
+              <!-- End Search -->
+              
+            </div>
+            <!-- End Sidebar -->
+            <div class="cl">&nbsp;</div>
+          </div>
+          <!-- End Main -->
+  
+ 
+        </div>
+        <!-- End Shell -->
+    
+         <!-- Footer -->
+         <div id="footer">
+            <!---<p class="left"> <a href="#">Home</a> <span>|</span> <a href="#">Support</a> <span>|</span> <a href="#">My Account</a> <span>|</span> <a href="#">The Store</a> <span>|</span> <a href="#">Contact</a> </p>--->
+            <p style="text-align:center"> &copy; 2013 Shop Around. Design by Valentina Badea </p>
+         </div>
+         <!-- End Footer -->
+    </form>
+
+</body>
+</html>
