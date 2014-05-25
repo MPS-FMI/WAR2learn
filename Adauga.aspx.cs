@@ -38,7 +38,7 @@ namespace licenta
 
         protected DataView AfiseazaCategorii()
         {
-            string oradb = "user id=badeavalentina;password=valentina;data source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST= 193.226.51.37)(PORT = 1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME=o11g)));";
+            string oradb = "<CNlz c.  fnsdlvnc v sdgknfvnfv
             OracleConnection conn = new OracleConnection(oradb); // C#
 
             conn.Open();
