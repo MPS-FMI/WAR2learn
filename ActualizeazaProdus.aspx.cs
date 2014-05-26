@@ -81,6 +81,7 @@ namespace licenta
             cmd.ExecuteNonQuery();
             trans.Commit();
             conn.Close();
+		string test = "test";
 
             LabelProdus.Visible = true;
             DataListProdus.DataSource = InfoProdus();

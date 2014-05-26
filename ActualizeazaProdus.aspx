@@ -37,6 +37,7 @@
                         <tr>
                             <td style="color:#CC6600; padding:5 10 5 10px"> Pret:</td>
                             <td>
+
                                 <%#DataBinder.Eval(Container.DataItem, "pret") %>
                             </td>
                             <td> 
