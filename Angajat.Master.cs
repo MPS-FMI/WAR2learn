@@ -28,7 +28,7 @@ namespace licenta
 
             conn.Open();
 
-            string query = "select categorie.id_categorie as id, categorie.denumire as nume from categorie where categorie.id_parinte is not null";
+            string query = "select Categorie.id_categorie as id, Categorie.denumire as nume from Categorie where Categorie.id_parinte is not null";
 
             OracleDataAdapter adapter = new OracleDataAdapter(query, conn);
             DataSet ds = new DataSet();
